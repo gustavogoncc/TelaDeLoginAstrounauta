@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2ecc71;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#222;
+}
+.logo{
+    color: #2ecc71;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+    position:relative;
+
+}
+
+.login-box{
+    background: white;
+    padding: 20px;
+    border-radius:10px;
+    color:black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding:10px;
+
+}
+button{
+    background-color:#2ecc71;
+    color: white;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    width:100%;
+}
+button:hover{
+    background-color:#27ae60;
+
+}
+.astronaut {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 350px !important; /* Força a alteração do tamanho */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o limite */
+    height: auto;
+    display: block; /* Evita comportamento inline */
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float{
+    0%, 100%{
+        transform:  translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
